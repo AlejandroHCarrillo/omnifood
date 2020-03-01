@@ -30,7 +30,6 @@
 /*  GRID COLUMN SETUP   ==================================================================== */
 
 .col {
-	background-color: tomato;
 	display: block;
 	float:left;
 	margin: 1% 0 1% 1.6%;
