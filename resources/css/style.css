@@ -97,6 +97,20 @@ h3{
   margin-bottom: 10px;
 }
 
+.icon-small{
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 120%;
+
+  /* Alinear texto e iconos */
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-left: 10px;
+}
+
 ion-icon {
   color: #e67e22;
 }
@@ -139,6 +153,13 @@ ion-icon {
 .btn-ghost:link,
 .btn-ghost:visited{
   border: 1px solid #e67e22;
+}
+
+/* LINKS */
+
+a:link,
+a:active{
+  text-decoration: none;
 }
 
 /* -------------------------------------------------- */
@@ -203,6 +224,9 @@ header{
 .section-features .long-copy{
   margin-bottom: 30px;
 }
+/* .section-features>div>div>div ion-icon{
+  color:blue;
+} */
 
 /* Meals */
 .section-meals{
@@ -297,6 +321,46 @@ header{
   width: auto;
   margin-right: 10px;
 }
+
+/* Cities */
+.section-cities{
+  width: 100%;
+  /* display: flex;
+  flex-direction: row; */ 
+}
+
+.section-cities>div{
+  width: 100%;
+  /* background-color: tomato; */
+}
+
+.column-box img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.cities-feature{
+  margin-bottom: 5px;
+}
+
+/* */
+.city-feature a:any-link,
+.city-feature a:visited
+{
+  color:#e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom .5s, color .5s;
+}
+
+.city-feature a:hover,
+.city-feature a:active
+{
+  border-bottom: 1px solid transparent;
+}
+
+
 
 /* Conflicto con .row del grid.css*/
 .row-cols {
