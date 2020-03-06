@@ -111,9 +111,9 @@ h3{
   margin-left: 10px;
 }
 
-ion-icon {
+/* ion-icon {
   color: #e67e22;
-}
+} */
 
 /* buttons */
 .btn:link,
@@ -406,8 +406,86 @@ cite img{
   margin-right: 10px;
 }
 
+/*  Plans   */
+.section-plans{
+  background-color: #f4f4f4;
+}
+
+.plan-box{
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  margin-left: 5%;
+  box-shadow: -4px 4px 2px #efefef;
+}
+
+.plan-box div:first-child{
+  background-color: #fcfcfc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+
+.plan-box div:last-child{
+  border: 0;
+}
+
+.section-plans>div:last-child>div:first-child>div a{
+  color: #fff;
+}
+
+.plan-box>div>a:link,
+.plan-box>div>a:visited
+{
+  color: #e67e22;
+}
+
+.plan-box>div>a:hover:link,
+.plan-box>div>a:hover:visited
+{
+  color: #fff;
+}
+
+.plan-box div{
+  padding: 15px;
+  border-bottom:1px solid #e8e8e8;
+}
+
+
+.plan-box div:last-child{
+  text-align: center;
+}
+
+.plan-price{
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22;
+}
+.plan-price span{
+  font-size: 30%;
+  font-weight: 300;
+}
+.plan-price-meal{
+  font-size: 80%;
+}
+
+.section-plans ul{
+  list-style: none;
+}
+
+.plan-box li{
+  padding: 5px, 0;
+}
+
+
+
+
+
+
 
 /* Conflicto con .row del grid.css*/
 .row-cols {
   display: flex;
+  justify-content: space-evenly;
 }
