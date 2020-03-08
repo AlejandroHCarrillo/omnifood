@@ -111,9 +111,13 @@ h3{
   margin-left: 10px;
 }
 
-/* ion-icon {
-  color: #e67e22;
-} */
+.icon-footer{
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #fefefe;
+  font-size: 120%;
+}
 
 /* buttons */
 .btn:link,
@@ -143,6 +147,12 @@ input[type=submit]{
   background-color: #e67e22;
   border: 1px solid #e67e22;
   color:#fff;
+}
+
+.social-media{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
 
 .btn-full:hover,
@@ -230,9 +240,6 @@ header{
 .section-features .long-copy{
   margin-bottom: 30px;
 }
-/* .section-features>div>div>div ion-icon{
-  color:blue;
-} */
 
 /* Meals */
 .section-meals{
@@ -242,8 +249,6 @@ header{
 .meals-showcase{
   list-style: none;
   width: 100%;
-  /* display: flex;
-  flex-direction: row; */
 }
 
 .meals-showcase li{
@@ -331,13 +336,10 @@ header{
 /* Cities */
 .section-cities{
   width: 100%;
-  /* display: flex;
-  flex-direction: row; */ 
 }
 
 .section-cities>div{
   width: 100%;
-  /* background-color: tomato; */
 }
 
 .column-box img{
@@ -369,8 +371,6 @@ header{
 /* Testimonials */
 .section-testimonials
 {
-  /* img/hero.jpg */
-  /* background: url(img/back-customers.jpg); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                     url(img/back-customers.jpg);
   background-size: cover;
@@ -511,6 +511,91 @@ input[type=checkbox]{
 *:focus{
   outline: none;
 }
+
+/* Footer */
+footer{
+  background-color: #333;
+  color: #888;
+  height: 70px;
+  font-size: 70%;
+}
+
+.section-footer a:link,
+.section-footer a:visited{
+  text-decoration: none;
+  border:0;
+  color: #888;
+}
+
+.section-footer a:hover,
+.section-footer a:active{
+  color: #ddd;
+  transition: color .5s;
+}
+
+.footer-nav{
+  list-style: none;
+  float: left;
+}
+
+.social-links{
+  list-style: none;
+  float: right;
+} 
+
+.footer-nav
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-nav li,
+.social-media li{
+  padding: 15px 10px;
+} 
+
+footer p{
+  text-align: center;
+  font-size: 50%;
+}
+
+.social-media ion-icon[name=logo-facebook],
+.social-media ion-icon[name=logo-twitter],
+.social-media ion-icon[name=logo-instagram],
+.social-media ion-icon[name=logo-whatsapp]{
+  transition: color .5s;
+}
+
+.social-media ion-icon[name=logo-facebook]:hover,
+.social-media ion-icon[name=logo-facebook]:active
+{
+  color: #1977f2;
+}
+
+.social-media ion-icon[name=logo-twitter]:hover,
+.social-media ion-icon[name=logo-twitter]:active
+{
+  color: #1da1f2;
+}
+
+.social-media ion-icon[name=logo-instagram]:hover,
+.social-media ion-icon[name=logo-instagram]:active
+{
+  color: #c32aa3;
+}
+
+.social-media ion-icon[name=logo-whatsapp]:hover,
+.social-media ion-icon[name=logo-whatsapp]:active
+{
+  color: #25d366;
+}
+
+.social-links li:link,
+.social-links li:visited{
+  font-size: 180%;
+}
+
 
 /* Conflicto con .row del grid.css*/
 .row-cols {
